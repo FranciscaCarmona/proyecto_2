@@ -17,4 +17,13 @@ public interface UsuarioDAO extends CrudRepository<Usuario, Integer>{
     
     @Override
     public List<Usuario> findAll();
+    
+//    Usuario aux = uDAO.findByidUsuario(u.getIdUsuario);
+//    if(aux==null){
+//       uDAO.save(u);
+//       return "exito"
+//    }else{
+//    return "registro"
+//}
+ //  public Usuario findidUsuario(String s);
 }

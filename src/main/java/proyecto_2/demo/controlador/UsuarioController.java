@@ -28,10 +28,6 @@ public class UsuarioController {
     @GetMapping("/CrearUsuario")
     public String mostrarFormulario(Model model){
         model.addAttribute("usuario", new Usuario());  //quiero enviar un usuario vacio a la vista (crear Usuario)
-        
-        
-        
-        
         return "CrearUsuario";
     }
     
@@ -40,6 +36,5 @@ public class UsuarioController {
         
         uDAO.save(usuario);
         return "exito";
-    }
-    
+    }    
 }
