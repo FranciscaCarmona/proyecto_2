@@ -19,15 +19,15 @@
                     <th scope="col">Id</th>
                     <th scope="col">Precio</th>
                     <th scope="col">Descripción</th>
-                    <th scope="col">Nombre</th>
+                    
                   </tr>
                 </thead>
                 <tbody>
                   <tr th:each=" l :${listaservicios}">
-                    <th scope="row" th:text="${l.getId()}"></th>
+                    <th scope="row" th:text="${l.getIdTipoServicio()}"></th>
                     <td th:text="${l.getPrecio()}"></td>
                     <td th:text="${l.getDescripcion()}"></td>
-                    <td th:text="${l.getNombre()}"></td>
+                    
                   </tr>
                   
                 
